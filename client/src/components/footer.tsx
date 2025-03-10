@@ -2,6 +2,10 @@ import { Link } from "wouter";
 import { Github, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,21 +24,21 @@ export default function Footer() {
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/">
+                  <Link href="/" onClick={scrollToTop}>
                     <span className="text-muted-foreground hover:text-foreground cursor-pointer">
                       Home
                     </span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/auth">
+                  <Link href="/auth" onClick={scrollToTop}>
                     <span className="text-muted-foreground hover:text-foreground cursor-pointer">
                       Sign In
                     </span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/post/new">
+                  <Link href="/post/new" onClick={scrollToTop}>
                     <span className="text-muted-foreground hover:text-foreground cursor-pointer">
                       Write a Post
                     </span>
@@ -75,7 +79,7 @@ export default function Footer() {
           </div>
           
           <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} BlogSpace. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} BlogSpace. Developed by megharaj. All rights reserved.</p>
           </div>
         </div>
       </div>
