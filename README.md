@@ -81,7 +81,7 @@ Made with 💙 by [Meghraj](https://github.com/Meghraj2004) — who loves coffee
 
 ## 🦄 Fun Fact
 
-> This project was built while binge-watching K-Dramas. Multitasking level: LEGENDARY 💻📺🔥
+> This project was built while binge-watching Marvel. Multitasking level: LEGENDARY 💻📺🔥
 
 ---
 
